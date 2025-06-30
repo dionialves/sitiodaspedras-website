@@ -32,17 +32,17 @@ header {
 }
 
 .header-wrapper-info {
-    text-align: right; /* Alinha o texto à direita */
+    text-align: right;
     font-size: 0.9em;
     color: #555;
 }
 
 .header-wrapper-info p {
-    margin: 3px 0; /* Espaçamento entre as linhas de contato */
+    margin: 3px 0;
 }
 
 .header-wrapper-info a {
-    color: #4A4A4A; /* Cor verde para os links */
+    color: #4A4A4A;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -53,12 +53,12 @@ header {
 
 .header-wrapper-info i {
     margin-right: 5px;
-    color: #6C9F3C; /* Cor para os ícones */
+    color: #6C9F3C;
 }
 
 .header-wrapper-info .btn-customer-area{
     display: inline-block;
-    background-color: #6C9F3C; /* Um verde um pouco diferente para o botão */
+    background-color: #6C9F3C;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -74,7 +74,7 @@ header {
 
 .btn-customer-area i {
     margin-right: 5px;
-    color: white; /* Cor para os ícones */
+    color: white;
 }
 
 /* ------------- Nav bar ------------- */
@@ -108,7 +108,7 @@ nav a.active {
 /* ------------- Banner ------------- */
 
 .banner {
-    background-image: url('/images/banner01.png'); /* substitua pelo caminho real da imagem */
+    background-image: url('images/banner01.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
