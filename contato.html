@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sítio das Pedras</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/whatsapp.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <a href="/"><img src="images/logo.png" alt="Sítio das Pedras" /></a>
+            <div class="header-wrapper-info">
+                <p><i class="fas fa-phone-alt"></i> Contato: <a href="tel:+5549987654321">(49) 98765-4321</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contato@sitiodaspedras.com.br">contato@sitiodaspedras.com.br</a></p>
+                <a href="#" class="btn-customer-area"><i class="fas fa-user-circle"></i> Área do Cliente</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="quemsomos.html">Sobre o Sítio</a>
+        <a href="visitenos.html">Visite-nos</a>
+        <a href="contato.html" class="active">Contato</a>
+    </nav>
+
+    <main >
+        <section class="page">
+
+            <section class="header-section">
+                <div class="container">
+                    <h1>Entre em Contato Conosco</h1>
+                    <p>Seja para dúvidas, sugestões, orçamentos ou apenas um oi, estamos prontos para ouvir você!</p>
+                </div>
+            </section>
+
+            <section class="contact-content">
+                <div class="contact-form-container">
+                    <h2>Envie sua Mensagem</h2>
+                    <form id="form" action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Seu Nome Completo:</label>
+                            <input type="text" id="name" name="name" required placeholder="Ex: João da Silva">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Ex: seu.email@exemplo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone:</label>
+                            <input type="text" id="phone" name="phone" required placeholder="Ex: (49) 98765-4321)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Assunto:</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Ex: Dúvida sobre produtos">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Sua Mensagem:</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+                        <p id="message-erro"></p>
+                        <button type="submit" class="button primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <h2>Nossas Informações</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, Chapecó - SC, 89801-000</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p><strong>Telefone:</strong> <a href="tel:+5549987654321">(49) 98765-4321</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><strong>Email:</strong> <a href="mailto:contato@sitiodaspedras.com.br">contato@sitiodaspedras.com.br</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-item-flex">
+                            <p><strong>Horário de Atendimento:</strong></p>
+                            <ul>
+                                <li>Segunda a Sexta: 08:00 - 18:00</li>
+                                <li>Sábado: 09:00 - 13:00</li>
+                                <li>Domingo: Fechado</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="map-container">
+                        <h3>Onde Nos Encontrar:</h3>
+                        <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.6148332938883!2d-52.62145322479261!3d-27.09886367645152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b52123d463d1%3A0xfc1a7d23d8c114e9!2sChapec%C3%B3%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1719759714856!5m2!1spt-BR!2sbr"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-section footer-about">
+                <a href="#" class="footer-logo-link"> <img src="images/logo2.png" alt="Sítio das Pedras Logo" class="footer-logo-img">
+                </a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook do Sítio das Pedras"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram do Sítio das Pedras"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp do Sítio das Pedras"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="quemsomos.html">Sobre o Sítio</a></li>
+                    <li><a href="visitenos.html">Visite-nos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3>Entre em Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Fictícia, 123 - Campo Belo, Chapecó - SC</p>
+                <p><i class="fas fa-phone-alt"></i> (49) 98765-4321</p>
+                <p><i class="fas fa-envelope"></i> contato@sitiodaspedras.com.br</p>
+            </div>
+
+            <div class="footer-section footer-newsletter">
+                <h3>Receba Novidades</h3>
+                <p>Assine nossa newsletter para ficar por dentro das últimas ofertas e produtos!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail para newsletter">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 Sítio das Pedras. Todos os direitos reservados. | Desenvolvido por
+                <a class="developedBy" href="https://github.com/dionialves">
+                    Dioni A. Oliveira
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5549987654321"
+       target="_blank"
+       class="btn-whatsapp-pulse">
+        <img src="images/whatsapp_button.png" width="50px" alt="Botão Whatsapp">
+    </a>
+
+    <script type="module" defer>
+
+        const form = document.querySelector('#form');
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // evita envio se tiver erro
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const messageErro = document.getElementById("message-erro");
+
+            // Regex para telefone (xx) xxxx-xxxx ou (xx) xxxxx-xxxx
+            const telefoneRegex = /^\(\d{2}\)\s\d{4,5}-\d{4}$/;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            let errors = [];
+
+            if (name === "") errors.push("O nome é obrigatório.");
+            if (!emailRegex.test(email)) errors.push("O email está inválido.");
+            if (!telefoneRegex.test(phone)) errors.push("O telefone deve estar no formato (DD) XXXX-XXXX ou (DD) XXXXX-XXXX.");
+            if (subject === "") errors.push("O assunto é obrigatório.");
+            if (message === "") errors.push("A Mensagem é obrigatória")
+
+            if (errors.length > 0) {
+                messageErro.innerHTML = errors.join("<br>");
+            } else {
+                messageErro.innerHTML = "";
+                // Aqui você pode enviar o formulário (ex: via fetch)
+                alert("Formulário enviado com sucesso!");
+                this.reset();
+            }
+        });
+
+        const telInput = document.getElementById("phone");
+
+        telInput.addEventListener('input', function (e) {
+            let valor = e.target.value.replace(/\D/g, ''); // remove tudo que não for número
+
+            if (valor.length > 11) valor = valor.slice(0, 11); // limita a 11 dígitos
+
+            if (valor.length >= 2 && valor.length <= 6) {
+                valor = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+            } else if (valor.length > 6 && valor.length <= 10) {
+                valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 6)}-${valor.slice(6)}`;
+            } else if (valor.length > 10) {
+                valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7)}`;
+            }
+
+            e.target.value = valor;
+        });
+    </script>
+
+</body>
+</html>

@@ -11,6 +11,22 @@ body {
     color: #666;
 }
 
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
 /* ------------- Header ------------- */
 
 header {
@@ -139,6 +155,10 @@ nav a.active {
     max-width: 600px;
 }
 
+.banner-wrapper h1 {
+    color: white;
+}
+
 .banner-wrapper h1,
 .banner-wrapper p,
 .banner-wrapper a {
@@ -170,8 +190,6 @@ nav a.active {
 }
 
 .section-products h2 {
-    color: #333;
-    font-size: 2.5em;
     margin-top: 80px;
 }
 
@@ -223,7 +241,6 @@ nav a.active {
 }
 
 .product-card__title {
-    font-size: 1.2em;
     margin-bottom: 5px;
     min-height: 2.4em;
     margin-top: 18px;
@@ -238,6 +255,10 @@ nav a.active {
     color: #4d7c0f;
     font-weight: bold;
     letter-spacing: 0.02em;
+}
+
+.product-card__description {
+    text-align: center;
 }
 
 .product-card__button {
@@ -292,9 +313,7 @@ nav a.active {
 
 .testimonials-header h2 {
     margin-bottom: 10px;
-    font-size: 2.2em;
     font-weight: 600;
-    color: #333;
 }
 
 .testimonials-header p {
@@ -565,6 +584,7 @@ nav a.active {
 
 .page {
     padding-top: 40px;
+    margin-top: 4px;
     background-color: #f9f9f9;
 }
 
@@ -573,8 +593,6 @@ nav a.active {
 }
 
 .header-section h1 {
-    color: #333;
-    font-size: 2.8em;
     margin-bottom: 10px;
 }
 
@@ -820,4 +838,204 @@ nav a.active {
     height: 400px;
     border: none;
     border-radius: 10px;
+}
+
+/* ------------- Pagina de Contato ------------- */
+
+
+
+.contact-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-form-container {
+    flex: 2;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form .button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.contact-info-container {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info-item i {
+    font-size: 1.5em;
+    color: #4CAF50;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.info-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info-item ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.info-item ul li {
+    margin-bottom: 5px;
+}
+
+.info-item-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item a {
+    color: #4A4A4A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.map-container h3 {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button.primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #388E3C;
+}
+
+#message-erro {
+    color: red;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+
+/* ------------- Pagina de 404 ------------- */
+
+.section-404 {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.section-404 h1 {
+    margin-bottom: 20px;
+}
+
+.section-404 p {
+    margin-bottom: 30px;
+}
+
+.section-404 .btn-banner {
+    padding: 12px 24px;
+    background-color: #5a8f3b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.section-404 .btn-banner:hover {
+    background-color: #446e2c;
 }
