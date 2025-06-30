@@ -1,0 +1,53 @@
+/* Box sizing e borda confiável */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove margens e padding padrão */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define altura total para body */
+html, body {
+    height: 100%;
+}
+
+/* Remove lista padrão */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Tipografia consistente */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif;
+}
+
+/* Melhor renderização de fontes */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Inputs mais previsíveis */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Remove animações em modo reduzido */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sítio das Pedras</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <a href="/"><img src="/images/logo.png" alt="Sítio das Pedras" /></a>
+            <div class="header-wrapper-info">
+                <p><i class="fas fa-phone-alt"></i> Contato: <a href="tel:+5549987654321">(49) 98765-4321</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contato@sitiodaspedras.com.br">contato@sitiodaspedras.com.br</a></p>
+                <a href="#" class="btn-customer-area"><i class="fas fa-user-circle"></i> Área do Cliente</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/produtos" class="active">Produtos</a>
+        <a href="/quemsomos">Sobre o Sítio</a>
+        <a href="/visitenos">Visite-nos</a>
+        <a href="/contato">Contato</a>
+    </nav>
+
+    <main>
+        <section class="page">
+
+            <section class="header-section">
+                <div class="container">
+                    <h1>Todos os Nossos Produtos</h1>
+                    <p>Explore nossa seleção completa de produtos naturais, frescos e de alta qualidade, direto do campo para você.</p>
+                </div>
+            </section>
+
+            <section class="product-filters-section">
+                <div class="container">
+                    <div class="filter-controls">
+                        <div class="search-box">
+                            <input type="text" placeholder="Buscar produto..." aria-label="Buscar produtos">
+                            <button type="submit" aria-label="Pesquisar"><i class="fas fa-search"></i></button>
+                        </div>
+
+                        <div class="filter-dropdowns">
+                            <select aria-label="Filtrar por Categoria">
+                                <option value="">Todas as Categorias</option>
+                                <option value="ovos">Ovos</option>
+                                <option value="graos">Grãos e Farinhas</option>
+                                <option value="mel">Mel e Derivados</option>
+                                <option value="frutas-desidratadas">Frutas Desidratadas</option>
+                                <option value="ervas">Ervas e Chás</option>
+                            </select>
+
+                            <select aria-label="Ordenar por">
+                                <option value="default">Ordenar por</option>
+                                <option value="price-asc">Preço: Menor para Maior</option>
+                                <option value="price-desc">Preço: Maior para Menor</option>
+                                <option value="name-asc">Nome: A-Z</option>
+                                <option value="name-desc">Nome: Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/ovos.jpg" alt="Ovos Caipira" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Ovos Caipira</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/mel.jpg" alt="Mel Artesanal" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Mel Artesanal</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/banana-desidratada.png" alt="Banana Desidratada" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Banana Desidratada</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/sementes-de-milho-crioulo.jpg" alt="Sementes de Milho Crioulo" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Sementes de Milho Crioulo</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/farinha-de-milho.jpg" alt="Farinha de Milho" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Farinha de Milho</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/farinha-de-mandioca.webp" alt="Farinha de Mandioca" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Farinha de Mandioca</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/sementes-de-feijao.png" alt="Sementes de Feijao" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Sementes de Feijao</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="/images/products/suco-natual-uva.jpeg" alt="Suco Natal de Uva" />
+                    </div>
+                    <div class="product-card__title">
+                        <h3>Suco Natal de Uva</h3>
+                    </div>
+                    <p class="product-card__price">R$ 10,00</p>
+                    <button class="product-card__button">Comprar</button>
+                </div>
+
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">Próxima &raquo;</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-section footer-about">
+                <a href="#" class="footer-logo-link"> <img src="/images/logo2.png" alt="Sítio das Pedras Logo" class="footer-logo-img">
+                </a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook do Sítio das Pedras"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram do Sítio das Pedras"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp do Sítio das Pedras"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#products">Produtos</a></li>
+                    <li><a href="/#testimonials">Depoimentos</a></li>
+                    <li><a href="#">Sobre o Sitio</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-contact">
+                <h3>Entre em Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Fictícia, 123 - Campo Belo, Chapecó - SC</p>
+                <p><i class="fas fa-phone-alt"></i> (49) 98765-4321</p>
+                <p><i class="fas fa-envelope"></i> contato@sitiodaspedras.com.br</p>
+            </div>
+
+            <div class="footer-section footer-newsletter">
+                <h3>Receba Novidades</h3>
+                <p>Assine nossa newsletter para ficar por dentro das últimas ofertas e produtos!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail para newsletter">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 Sítio das Pedras. Todos os direitos reservados. | Desenvolvido por
+                <a class="developedBy" href="https://github.com/dionialves">
+                    Dioni A. Oliveira
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
