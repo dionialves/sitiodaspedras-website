@@ -1039,3 +1039,218 @@ nav a.active {
 .section-404 .btn-banner:hover {
     background-color: #446e2c;
 }
+
+/* ------------- Responsividade ------------- */
+
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* ------------- Header ------------- */
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .header-wrapper img {
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .header-wrapper-info {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .header-wrapper-info .btn-customer-area {
+        margin-top: 8px;
+    }
+
+    /* ------------- Nav ------------- */
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    nav a:first-child {
+        border-top: none;
+    }
+
+    /* ------------- Banner ------------- */
+    .banner {
+        height: auto;
+        padding: 60px 1rem;
+    }
+
+    .banner-wrapper {
+        padding: 2rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-wrapper p {
+        max-width: 100%;
+    }
+
+    .banner-wrapper h1 {
+        font-size: 1.8em;
+    }
+
+    .btn-banner {
+        padding: 0.6rem 1.2rem;
+    }
+
+    /* ------------- Produtos na Main ------------- */
+
+    .section-products {
+        text-align: center;
+    }
+
+    .line01 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .line02, #btn-loadMore {
+        display: none;
+    }
+
+    /* ------------- Footer ------------- */
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .footer-logo-img {
+        max-width: 150px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .newsletter-form input[type="email"] {
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        font-size: 0.9em;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .footer-bottom .legal-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+
+    /* ------------- Pagina de Produtos ------------- */
+
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .filter-dropdowns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter-dropdowns select {
+        width: 100%;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    .product-card__image {
+            height: 100%;
+    }
+
+    /* ------------- Pagina Quem somos ------------- */
+
+    .container, .about-section {
+        text-align: center;
+    }
+
+    /* ------------- Pagina Visite-nos ------------- */
+
+    .location-section {
+        text-align: center;
+    }
+
+    .accommodations {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ------------- Produtos na Main ------------- */
+    .line01 {
+        grid-template-columns: 1fr;;
+    }
+
+    /* ------------- Pagina de Produtos ------------- */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card__title h3 {
+        font-size: 1.1em;
+    }
+
+    .product-card__description {
+        font-size: 0.95em;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .pagination .page-link {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
